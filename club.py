@@ -12,7 +12,13 @@ async def ping(ctx):
     
 @bot.command()
 async def flip(ctx):
-    flipped = random.choice(["It landed on Heads.", "It landed on Tails", "OMG IT LANDED ON THE EDGE!!"])
+    list = []
+    for heads in range(0, 49):
+        list.append("It landed on Heads.")
+    for tails in range(0, 49):
+        list.append("It landed on Tails.")
+    list.append("It landed on the side!")
+    flipped = random.choice(list)
     await ctx.send(flipped)
 
 bot.run(os.environ.get("TOKEN"))
