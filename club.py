@@ -17,6 +17,6 @@ async def on_message(message):
     if message.content.startswith(club.creator):
         await client.send_message(message.channel, 'The creator of this bot is **MininDiamond123#7476**.')
        
-client.run(os.environ.get("TOKEN"))
+client.run("TOKEN")
     
     
