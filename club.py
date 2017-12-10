@@ -17,7 +17,8 @@ async def flip(ctx):
         list.append("It landed on Heads.")
     for tails in range(0, 49):
         list.append("It landed on Tails.")
-    list.append("It landed on the side!")
+    for side in range(0, 2):
+        list.append("It landed on the side!")
     flipped = random.choice(list)
     await ctx.send(flipped)
 
