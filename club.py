@@ -1,22 +1,12 @@
-import discord 
-import asyncio
-import random
-import json
+import discord
 import os
+import io
+from discord.ext import commands
 
-client = discord.Client()
+bot = commands.Bot(command_prefix="club.", description="small description", owner_id=ur id)
 
-@client.event
-async def on_ready():
-    print("Logged in as")
-    print(client.user.name)
-    print(client.user.id)
-    
-    
-async def on_message(message):
-    if message.content.startswith(club.creator):
-        await client.send_message(message.channel, 'The creator of this bot is **MininDiamond123#7476**.')
-       
-client.run("TOKEN")
-    
-    
+@bot.command()
+async def ping(ctx):
+    await ctx.send("Pong!)"
+
+bot.run(os.environ.get("TOKEN"))
