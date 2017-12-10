@@ -7,6 +7,6 @@ bot = commands.Bot(command_prefix = "club.", description = "The bot for The Club
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send("Pong!)"
+    await ctx.send("Pong!")
 
 bot.run(os.environ.get("TOKEN"))
