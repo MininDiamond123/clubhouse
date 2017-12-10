@@ -4,7 +4,7 @@ import random
 import json
 import os
 
-client = discord.client
+client = discord.Client()
 
 @client.event
 async def on_ready():
