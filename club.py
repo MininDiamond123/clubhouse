@@ -8,7 +8,7 @@ bot = commands.Bot(command_prefix = "club.", description = "The bot for The Club
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send("Pong!")
+    await ctx.send("Pong! :ping_pong: ")
     
 @bot.command()
 async def flip(ctx):
@@ -22,4 +22,6 @@ async def flip(ctx):
     flipped = random.choice(list)
     await ctx.send(flipped)
 
+@bot.command()
+    
 bot.run(os.environ.get("TOKEN"))
