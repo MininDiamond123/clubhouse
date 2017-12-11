@@ -4,7 +4,11 @@ import io
 import random
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix = "club.", description = "The bot for The Clubhouse", owner_id = 389472478545575937)
+bot = commands.Bot(command_prefix = "ch.", description = "The bot for The Clubhouse", owner_id = 389472478545575937)
+
+@client.event()
+async def on_member_join(member)
+
 
 @bot.command()
 async def ping(ctx):
@@ -21,5 +25,9 @@ async def flip(ctx):
         list.append("It landed on the side!")
     flipped = random.choice(list)
     await ctx.send(flipped)
+    
+@bot.command()
+async def test(ctx):
+    await ctx.send({embed: {color:FF0000 description:"Simple text"}})
 
 bot.run(os.environ.get("TOKEN"))
