@@ -6,10 +6,6 @@ from discord.ext import commands
 
 bot = commands.Bot(command_prefix = "ch.", description = "The bot for The Clubhouse", owner_id = 389472478545575937)
 
-@client.event()
-async def on_member_join(member)
-
-
 @bot.command()
 async def ping(ctx):
     await ctx.send("Pong! :ping_pong: ")
