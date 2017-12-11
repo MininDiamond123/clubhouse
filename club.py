@@ -22,6 +22,4 @@ async def flip(ctx):
     flipped = random.choice(list)
     await ctx.send(flipped)
 
-@bot.command()
-    
 bot.run(os.environ.get("TOKEN"))
