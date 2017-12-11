@@ -24,6 +24,6 @@ async def flip(ctx):
     
 @bot.command()
 async def test(ctx):
-    await ctx.send({embed: {color:FF0000 description:"Simple text"}})
+    await ctx.send({embed: {color:FF0000, description:"Simple text"}})
 
 bot.run(os.environ.get("TOKEN"))
