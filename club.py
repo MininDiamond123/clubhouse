@@ -41,8 +41,8 @@ async def flip(ctx):
     
 @bot.command()
 async def nhie(ctx):
-    nhie = ["failed a test", "had a crush on anyone", "eaten anything nasty", "used a door incorrectly", "cried during a movie", "missed a high-five"]
-    choice = random.choice(nhie)
+    list = ["failed a test", "had a crush on anyone", "eaten anything nasty", "used a door incorrectly", "cried during a movie", "missed a high-five"]
+    choice = random.choice(list)
     await ctx.send(f"Never have I ever... {choice} !")
     
     
