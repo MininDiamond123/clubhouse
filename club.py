@@ -25,7 +25,10 @@ devs = [
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send("Pong! :ping_pong: ")
+    em = discord.Embed()
+    em.title = "Pong! Websocket Latency:"
+    em.description = f":ping_pong: {bot.ws.latency * 1000: .4f}"
+    await ctx.send(embed=em)
     
 @bot.command()
 async def flip(ctx):
