@@ -25,5 +25,6 @@ async def flip(ctx):
 @bot.command()
 async def nhie(ctx):
     neverHaveIEver = open('NHIE.txt', 'w')
+    await ctx.send("TEST")
 
 bot.run(os.environ.get("TOKEN"))
