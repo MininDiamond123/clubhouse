@@ -32,7 +32,7 @@ async def ping(ctx):
     
 @bot.command()
 async def flip(ctx):
-    em = discord.Embed(color=discord.Color(value=0xa30401))
+    em = discord.Embed(color=discord.Color(value=0xb2acef))
     em.title = "Coinflip Results:"
     list = []
     for heads in range(0, 49):
