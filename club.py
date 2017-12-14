@@ -23,7 +23,7 @@ async def flip(ctx):
     await ctx.send(flipped)
     
 @bot.command()
-async def test(ctx):
-    await ctx.send({embed: {color:FF0000, description:"Simple text"}})
+async def nhie(ctx):
+    neverHaveIEver = open('NHIE.txt', 'w')
 
 bot.run(os.environ.get("TOKEN"))
