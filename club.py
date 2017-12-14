@@ -7,7 +7,7 @@ from contextlib import redirect_stdout
 import traceback
 import textwrap
 
-bot = commands.Bot(command_prefix = "ch.", description = "The bot for The Clubhouse", owner_id = 389472478545575937)
+bot = commands.Bot(command_prefix = "ch.", description = "This is a customized bot for The Clubhouse! If you have any suggestions, please tag a Bot Developer.", owner_id = 389472478545575937)
 
 def cleanup_code(content):
     """Automatically removes code blocks from the code."""
