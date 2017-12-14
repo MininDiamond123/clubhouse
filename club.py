@@ -25,9 +25,9 @@ devs = [
 
 @bot.command()
 async def ping(ctx):
-    em = discord.Embed()
+    em = discord.Embed(color=discord.Color(value=0xa30401))
     em.title = "Pong! Websocket Latency:"
-    em.description = f":ping_pong: {bot.ws.latency * 1000: .4f}"
+    em.description = f":ping_pong: {bot.ws.latency * 1000: .4f} ms"
     await ctx.send(embed=em)
     
 @bot.command()
