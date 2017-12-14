@@ -43,9 +43,9 @@ async def flip(ctx):
 async def nhie(ctx):
     list = ["failed a test", "had a crush on anyone", "eaten anything nasty", "used a door incorrectly", "cried during a movie", "missed a high-five"]
     choice = random.choice(list)
-    await ctx.send(f"Never have I ever... {choice} !")
-    await msg.add_reaction(":white_check_mark:")
-    await msg.add_reaction(":negative_squared_cross_mark:")
+    msg = await ctx.send(f"Never have I ever... {choice} !")
+    await msg.add_reaction("\U00002705")
+    await msg.add_reaction("\U0000274e")
     
     
 @bot.command(pass_context=True, hidden=True, name='eval')
