@@ -43,7 +43,7 @@ async def flip(ctx):
         list.append("It landed on the side!")
     flipped = random.choice(list)
     em.description = f"{flipped}"
-    await ctx.send(flipped)
+    await ctx.send(embed=em)
     
 @bot.command()
 async def nhie(ctx):
