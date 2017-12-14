@@ -32,6 +32,8 @@ async def ping(ctx):
     
 @bot.command()
 async def flip(ctx):
+    em = discord.Embed(color=discord.Color(value=0xa30401))
+    em.title = "Coinflip Results:"
     list = []
     for heads in range(0, 49):
         list.append("It landed on Heads.")
@@ -40,6 +42,7 @@ async def flip(ctx):
     for side in range(0, 2):
         list.append("It landed on the side!")
     flipped = random.choice(list)
+    em.description = f"{flipped}"
     await ctx.send(flipped)
     
 @bot.command()
