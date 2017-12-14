@@ -26,5 +26,5 @@ async def flip(ctx):
 async def nhie(ctx):
     nhie = ["failed a test", "had a crush on anyone", "eaten anything nasty", "used a door incorrectly", "cried during a movie", "missed a high-five"]
     choice = random.choice(nhie)
-    await ctx.send(choice)
+    await ctx.send("Never have I ever...", choice,"!")
 bot.run(os.environ.get("TOKEN"))
