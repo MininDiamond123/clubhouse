@@ -53,8 +53,8 @@ async def nhie(ctx):
     choice = random.choice(list)
     em.description = f"Never have I ever... {choice} !"
     await ctx.send(embed=em)
-    await em.add_reaction("\U00002705")
-    await em.add_reaction("\U0000274e")
+    await ctx.add_reaction("\U00002705")
+    await ctx.add_reaction("\U0000274e")
     
     
 @bot.command(pass_context=True, hidden=True, name='eval')
