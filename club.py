@@ -47,11 +47,13 @@ async def flip(ctx):
     
 @bot.command()
 async def nhie(ctx):
+    em = discord.Embed(color=discord.Color(value=0x85e814))
+    em.title = "Never Have I Ever:"
     list = ["failed a test", "had a crush on anyone", "eaten anything nasty", "used a door incorrectly", "cried during a movie", "missed a high-five"]
     choice = random.choice(list)
-    msg = await ctx.send(f"Never have I ever... {choice} !")
-    await msg.add_reaction("\U00002705")
-    await msg.add_reaction("\U0000274e")
+    em.description = f"Never have I ever... {choice} !"
+    await em.add_reaction("\U00002705")
+    await em.add_reaction("\U0000274e")
     
     
 @bot.command(pass_context=True, hidden=True, name='eval')
