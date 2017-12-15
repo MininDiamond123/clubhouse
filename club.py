@@ -52,9 +52,9 @@ async def nhie(ctx):
     list = ["failed a test", "had a crush on anyone", "eaten anything nasty", "used a door incorrectly", "cried during a movie", "missed a high-five"]
     choice = random.choice(list)
     em.description = f"Never have I ever... {choice} !"
-    await ctx.send(embed=em)
-    await ctx.add_reaction("\U00002705")
-    await ctx.add_reaction("\U0000274e")
+    msg = await ctx.send(embed=em)
+    await msg.add_reaction("\U00002705")
+    await msg.add_reaction("\U0000274e")
     
     
 @bot.command(pass_context=True, hidden=True, name='eval')
