@@ -31,7 +31,7 @@ async def ping(ctx):
     await ctx.send(embed=em)
     
 @bot.command()
-async def rr(ctx)
+async def rr(ctx):
     str = message.content[9:]
     await ctx.send(str)
     
